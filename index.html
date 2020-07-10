@@ -7,34 +7,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
-<body>
+<body style="background-color:rgb(71, 138, 168)">
 
-  <div class="container">
+  <div class="container" style="background-color:rgb(184, 79, 79)">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+      <div class="col-md-12 jumbotron text-center" style="background-color:rgb(184, 79, 79)">
+        <h1 style="color:black">Belly Button Biodiversity Dashboard</h1>
+        <p style="color:black">Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
-        <div class="well">
-          <h5><b>Test Subject ID No.:</b></h5>
+      <div class="col-md-2" style="background-color:rgb(184, 79, 79)">
+        <div class="well" style="background-color:rgb(184, 79, 79); border-color:rgb(107, 63, 121)">
+          <h5 style="color:black"><b>Test Subject ID No.:</b></h5>
           <!-- <select id="selDataset"></select>
           dropdown menu options are generated dynamically 
           this.value therefore returns to the value attribute of the current dropdown menu selection.-->
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          <select style="background-color:rgb(108, 72, 119); color:black" id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
+        <div class="panel panel-primary" style="border-color:rgb(108, 72, 119)">
+          <div class="panel-heading" style="background-color:rgb(184, 79, 79); border-color:rgb(108, 72, 119)">
+            <h3 class="panel-title" style="color:black">Demographic Info</h3>
           </div>
-          <div id="sample-metadata" class="panel-body"></div>
+          <div id="sample-metadata" class="panel-body" style="background-color:rgb(184, 79, 79); color:black"></div>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5" >
         <div id="bar"></div>
       </div>
       <div class="col-md-5">
